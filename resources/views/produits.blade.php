@@ -2,6 +2,6 @@
 
 <ul>
     @foreach ($produits as $item)
-        <li>{{ $item['nom'] }}</li>
+        <li><a href="{{ route('produits.show', ['id' => $item['id']]) }}">{{ $item['nom'] }}</a></li>
     @endforeach
 </ul>
