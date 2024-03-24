@@ -8,14 +8,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('home');
     }
 
-    public function showId(Request $request)
+    public function P404()
     {
-        $testId = $request->id;
-        $produits = ['TV','PC','PS5','Téle','Laptop'];
-        // $produits = [];
-        return view('welcome', compact("testId",'produits'));
+        return view('404');
     }
 }
